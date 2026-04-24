@@ -21,6 +21,7 @@
     "clean": "node run-command.mjs clean format",
     "proxy-validator": "node proxyServiceValidator.js",
     "workflow-test": "node run-command.mjs workflow",
+    "postinstall": "cd lib/rammerhead && npm install --ignore-scripts",
     "deployment": "npm install && npm run build && node backend.js"
   },
   "keywords": [
@@ -45,10 +46,10 @@
     "pm2": "^6.0.14",
     "puppeteer": "^24.37.2",
     "utf-8-validate": "^6.0.6",
-    "ws": "^8.19.0"
+    "ws": "^8.19.0",
+    "esbuild": "^0.27.3"
   },
   "devDependencies": {
-    "@babel/node": "^7.29.0",
-    "esbuild": "^0.27.3"
+    "@babel/node": "^7.29.0"
   }
 }
